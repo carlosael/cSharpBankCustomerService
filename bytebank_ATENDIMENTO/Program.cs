@@ -15,10 +15,10 @@ void ArrayContasCorrentes()
     listaDeContas.Adicionar(new ContaCorrente(874, "434343-s"));
     var contaDoAndre = new ContaCorrente(898, "433344-g");
     listaDeContas.Adicionar(contaDoAndre);
-    
+    listaDeContas.ExibirLista();
     Console.WriteLine("==================");
     listaDeContas.Remover(contaDoAndre);
-    
+    listaDeContas.ExibirLista();
 }
 
 ArrayContasCorrentes();

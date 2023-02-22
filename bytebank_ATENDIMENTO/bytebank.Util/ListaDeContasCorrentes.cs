@@ -62,5 +62,17 @@ namespace bytebank_ATENDIMENTO.bytebank.Util
             _proximaPosicao--;
             _itens[_proximaPosicao] = null;
         }
+
+        public void ExibirLista()
+        {
+            for (int i = 0; i <= _itens.Length; i++)
+            {
+                if (_itens[i] != null)
+                {
+                    var conta = _itens[i];
+                    Console.WriteLine($"Indice [{i}] = Conta: {conta.Conta} - Nº da Agência: {conta.Numero_agencia}");
+                }
+            }
+        }
     }
 }
