@@ -13,6 +13,12 @@ void ArrayContasCorrentes()
     listaDeContas.Adicionar(new ContaCorrente(874, "434343-f"));
     listaDeContas.Adicionar(new ContaCorrente(874, "434343-d"));
     listaDeContas.Adicionar(new ContaCorrente(874, "434343-s"));
+    var contaDoAndre = new ContaCorrente(898, "433344-g");
+    listaDeContas.Adicionar(contaDoAndre);
+    
+    Console.WriteLine("==================");
+    listaDeContas.Remover(contaDoAndre);
+    
 }
 
 ArrayContasCorrentes();
