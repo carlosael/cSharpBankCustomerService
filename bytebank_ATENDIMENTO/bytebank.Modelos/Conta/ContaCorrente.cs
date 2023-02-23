@@ -100,7 +100,6 @@
 		{
 			Numero_agencia = numero_agencia;
 			Conta = conta;
-			Conta = Guid.NewGuid().ToString().Substring(0, 8);
 			Titular = new Cliente();
 			TotalDeContasCriadas++;
 		}
