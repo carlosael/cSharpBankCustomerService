@@ -57,6 +57,9 @@ namespace bytebank_ATENDIMENTO.byteBank_Atendimento
                         case '5':
                             PesquisarContas();
                             break;
+                        case '6':
+                            EncerrarAplicacao();
+                            break;
                         default:
                             Console.WriteLine("Opcao não implementada.");
                             break;
@@ -68,6 +71,12 @@ namespace bytebank_ATENDIMENTO.byteBank_Atendimento
                 Console.WriteLine($"{excecao.Message}");
             }
 
+        }
+
+        private void EncerrarAplicacao()
+        {
+            Console.WriteLine(" ... Encerrando a aplicação. ...");
+            Console.ReadKey();
         }
 
         void CadastrarConta()
