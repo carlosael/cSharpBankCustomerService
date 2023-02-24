@@ -87,13 +87,12 @@ namespace bytebank_ATENDIMENTO.byteBank_Atendimento
             Console.WriteLine("===============================");
             Console.WriteLine("\n");
             Console.WriteLine("=== Informe dados da conta ===");
-            Console.Write("Número da conta: ");
-            string numeroConta = Console.ReadLine();
 
             Console.Write("Número da Agência: ");
             int numeroAgencia = int.Parse(Console.ReadLine());
 
-            ContaCorrente conta = new ContaCorrente(numeroAgencia, numeroConta);
+            ContaCorrente conta = new ContaCorrente(numeroAgencia);
+            Console.WriteLine($"Número da conta [NOVA] : {conta.Conta}");
 
             Console.Write("Informe o saldo inicial: ");
             conta.Saldo = double.Parse(Console.ReadLine());
@@ -130,7 +129,6 @@ namespace bytebank_ATENDIMENTO.byteBank_Atendimento
             foreach (ContaCorrente item in _listaDeContas)
             {
                 Console.WriteLine(item.ToString());
-                Console.WriteLine(">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>");
                 Console.ReadKey();
             }
 

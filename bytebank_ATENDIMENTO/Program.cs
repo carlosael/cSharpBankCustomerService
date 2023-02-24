@@ -1,6 +1,7 @@
 ﻿using bytebank.Modelos.Conta;
 using bytebank_ATENDIMENTO.bytebank.Exceptions;
 using bytebank_ATENDIMENTO.bytebank.Util;
+using bytebank_ATENDIMENTO.byteBank_Atendimento;
 using System.Collections;
 
 Console.WriteLine("Boas Vindas ao ByteBank, Atendimento.");
@@ -31,3 +32,5 @@ void ArrayContasCorrentes()
 
 ArrayContasCorrentes();
 #endregion
+
+new ByteBankAtendimento().AtendimentoCliente();
